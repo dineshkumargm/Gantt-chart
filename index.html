@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Planner AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        /* Excel-style scrollbar */
+        .scrollbar-thin::-webkit-scrollbar {
+            width: 14px;
+            height: 14px;
+        }
+        .scrollbar-thin::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border: 1px solid #ddd;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border: 3px solid #f1f1f1;
+        }
+        .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+        
+        /* Hatching Patterns for Gantt Bars */
+        .hatch-purple {
+            background-image: repeating-linear-gradient(
+                45deg,
+                #d8cfe5,
+                #d8cfe5 4px,
+                #c4b5d4 4px,
+                #c4b5d4 8px
+            );
+        }
+        .hatch-orange {
+            background-image: repeating-linear-gradient(
+                45deg,
+                #fcd9a1,
+                #fcd9a1 4px,
+                #f9c470 4px,
+                #f9c470 8px
+            );
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Table specific styles for the grid */
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 0;
+            margin: 0;
+            border: 1px solid #e2e2e2;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+</head>
+<body class="overflow-hidden">
+    <div id="root"></div>
+</body>
+</html>

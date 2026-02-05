@@ -1,0 +1,5 @@
+{
+  "name": "Project Planner AI",
+  "description": "A professional project management tool featuring an Excel-style Gantt chart with AI-powered task generation.",
+  "requestFramePermissions": []
+}
